@@ -8,10 +8,10 @@ class SearchViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  const Padding(
-      padding:  EdgeInsets.symmetric(horizontal: 30.0),
+    return const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 30.0),
       child: CustomScrollView(slivers: [
-         SliverToBoxAdapter(
+        SliverToBoxAdapter(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
