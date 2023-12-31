@@ -5,7 +5,7 @@ import 'package:bookly/features/home/presentation/view/widgets/custom_appbar.dar
 import 'package:bookly/features/home/presentation/view/widgets/feature_listview.dart';
 import 'package:flutter/material.dart';
 
-import 'best_seller_listview.dart';
+import 'newest_books_listview.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -42,7 +42,7 @@ class HomeViewBody extends StatelessWidget {
         SliverFillRemaining(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 30),
-            child: BestSellerListView(),
+            child: NewestBooksListView(),
           ),
         ),
       ],

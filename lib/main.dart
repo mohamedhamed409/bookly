@@ -10,6 +10,7 @@ import 'core/utils/app_router.dart';
 import 'features/home/manager/newest_books_cubit/newest_books_cubit.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   setupServiceLocator();
   runApp(const Bookly());
 }
@@ -24,10 +25,9 @@ class Bookly extends StatelessWidget {
         BlocProvider(
           create: (context) => FeaturedBooksCubit(
             getIt.get<HomeRepoImpl>(),
-          ),
+          )..fetchFeaturedBooks(),
         ),
-
-         BlocProvider(
+        BlocProvider(
           create: (context) => NewestBooksCubit(
             getIt.get<HomeRepoImpl>(),
           ),
