@@ -4,18 +4,18 @@ abstract class FeaturedBooksStates {
   const FeaturedBooksStates();
 }
 
-class FeaturedBookIntial extends FeaturedBooksStates {}
+class FeaturedBooksIntial extends FeaturedBooksStates {}
 
-class FeaturedBookLoading extends FeaturedBooksStates {}
+class FeaturedBooksLoading extends FeaturedBooksStates {}
 
-class FeaturedBookError extends FeaturedBooksStates {
+class FeaturedBooksFailure extends FeaturedBooksStates {
   final String errorMessage;
 
-  const FeaturedBookError(this.errorMessage);
+  const FeaturedBooksFailure(this.errorMessage);
 }
 
-class FeaturedBookSuccess extends FeaturedBooksStates {
+class FeaturedBooksSuccess extends FeaturedBooksStates {
   final List<BookModel> books;
 
- const FeaturedBookSuccess(this.books);
+  const FeaturedBooksSuccess(this.books);
 }
