@@ -18,7 +18,7 @@ class BookDetailsSection extends StatelessWidget {
         const CustomBookDetailAppbar(),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: width * .2),
-          child: const CustomBookImage(),
+          child: const CustomBookImage(imageUrl: 'https://img.freepik.com/free-vector/background-colored-rockets-flat-design_23-2147644103.jpg?w=740&t=st=1704098780~exp=1704099380~hmac=a6692d4318ad8f21710abed7c4f97acfe73c4eb8643c496955cbddfe03f61530',),
         ),
         const SizedBox(
           height: 43,

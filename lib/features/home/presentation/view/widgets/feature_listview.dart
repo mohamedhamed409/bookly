@@ -17,10 +17,11 @@ class FeatureListView extends StatelessWidget {
           return SizedBox(
             height: MediaQuery.of(context).size.height * .3,
             child: ListView.builder(
+              itemCount: state.books.length,
                 scrollDirection: Axis.horizontal,
-                itemBuilder: (context, index) => const Padding(
-                      padding: EdgeInsets.only(right: 16.0),
-                      child: CustomBookImage(),
+                itemBuilder: (context, index) =>  Padding(
+                      padding: const EdgeInsets.only(right: 16.0),
+                      child: CustomBookImage(imageUrl: state.books[index].volumeInfo.imageLinks.thumbnail!,),
                     )),
           );
         } else if (state is FeaturedBooksFailure) {

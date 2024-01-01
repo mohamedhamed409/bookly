@@ -24,6 +24,7 @@ class BooksAction extends StatelessWidget {
               borderRadius: const BorderRadius.only(
                   topRight: Radius.circular(12),
                   bottomRight: Radius.circular(12)),
+                  
               onPressed: () {},
               text: 'Free Preview',
               backGroundColor: const Color(0xffEF8262),
